@@ -402,6 +402,8 @@ ENDS
   color: white;
 }
 
+
+
 /***--FEATURED SECTION---****/
 .featured-container{
   width: 100%;
@@ -520,9 +522,31 @@ flex top btom
   width: 100%;
   height: 50%;
   display: flex;
+  gap: .2rem;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   border: 1px solid rgba(212, 46, 46, 0.336);
+ }
+
+ .btom-top .pdt-badge{
+  width: 100%;
+  height: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background: red;
+  text-align: center;
+  padding: .2rem .6rem;
+ }
+
+ .btom-top .pdt-title{
+  width: 100%;
+  height: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: blue;
  }
 
 /**
@@ -607,6 +631,7 @@ DELIVERY INFORMATION
   justify-content: center;
   border: 1px solid rgb(224, 219, 219);
   flex-direction: column;
+  cursor: pointer;
 }
 
 .infor-cards p{
