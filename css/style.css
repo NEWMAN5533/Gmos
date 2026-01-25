@@ -1,0 +1,747 @@
+
+:root{
+  --primary-cl: #0F5132;
+  --secondary-cl: #F8F9FA;
+  --ascent-cl: #D4AF37;
+
+  /**--primary-color--**/
+  --navbar-bg: #0F5132;
+  --hero-section-bg: #0F5132;
+  --primary-btns-bg: #0F5132;
+  --highlights-cl: #0F5132;
+  --background-cl: #F8F9FA;
+  --links-cl: #0F5132;
+  --btn-bg-cl: #0F5132;
+  --btn-hover-cl: #0f492e;
+  --btn-hover-cl-2:  #c4a236;
+  --light-bg:  rgb(245, 241, 241);
+
+  /**--secondary-color--**/
+  --page-bg-cl: #F8F9FA;
+  --card-bg-cl: #F8F9FA;
+  --forms-bg-cl: #F8F9FA;
+
+
+  /***---BOX-SHADOWS--***/
+  --card-bsh: 2px 2px 6px rgba(61, 59, 59, 0.4), -2px -2px 6px rgba(61, 59, 59, 0.4);
+  --card-bsh-2: 2px 2px 6px rgba(78, 76, 76, 0.4), -2px -2px 6px rgba(78, 76, 76, 0.4);
+
+  /**---ascent-color--**/
+  --icons-bg-cl: #D4AF37;
+  --section-div-bg-cl: #D4AF37;
+  --donation-page-emp-cl: #D4AF37;
+  --cta-btn: #D4AF37;
+
+  /**--TEXT-COLORS--**/
+  --main-txt: #23272b;
+  --muted-txt: #3f4743;
+  --hero-txt: #F8F9FA;
+  --price-txt: #0F5132;
+
+  /***--FEEDBACK-COLORS--***/
+  --success-cl: #198754;
+  --error-cl: #DC3545;
+  --warning-cl: #FFC107;
+
+  /***
+  PADDING 
+  ***/
+  --section-padding: .2rem .3rem;
+
+  /***
+  PRODUCTS CARD BORDER
+  ***/
+  --products-card-borer: rgba(184, 180, 180, 0.548);
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+/***---GLOBAL SCOPE---***/
+body{
+  width: 100%;
+  height: 100vh;
+  line-height: 1.6;
+  font-family: "inter" sans-serif;
+  color: var(--text);
+  overflow-y: auto;
+  background: var(--background-cl);
+}
+
+/**
+NAVBAR
+***/
+.navbar{
+  width: 100%;
+  max-width: 480px;
+  height: 4rem;
+  display: flex;
+  position: fixed;
+  background: var(--background-cl);
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-self: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: .2rem 1rem;
+  border-bottom: 1px solid rgb(231, 226, 226);
+  box-shadow: 0 2px 6px rgba(185, 185, 185, 0.5);
+  z-index: 10000;
+}
+
+.navbar .navbar-left{
+display: flex;
+align-items: center;
+justify-content: start;
+gap: .1rem;
+position: relative;
+}
+
+.navbar-left p{
+color:  rgb(38, 126, 77);
+font-weight: 500;
+font-size: 1.2rem;
+margin-top: 1rem;
+margin-right: .5rem;
+}
+
+.navbar-left img{
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+}
+
+/****--NAVBAR RIGHT--***/
+.nav-right{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: max-content;
+  gap: 2rem;
+  padding: 0 1rem;
+  position: relative;
+}
+
+.nav-right a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-decoration: none;
+  color: var(--main-txt);
+  font-size: .8rem;
+  transition: .3s ease;
+}
+
+
+
+.nav-right a img{
+  width: 1.4rem;
+  height: 1.3rem;
+}
+
+
+
+/****
+MAIN SECTION CONTAINER
+*****/
+.main-container-wrapper{
+  width: 100%;
+  max-width: 480px;
+  height: max-content;
+  padding: .3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-self: center;
+  overflow: hidden;
+  position: relative;
+  margin-top: 4.3rem;
+  background-color: var(--background-cl);
+  border: 0.1px solid rgb(207, 198, 198);
+}
+
+
+/* HERO */
+.hero {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  height: max-content;
+  background: var(--hero-section-bg);
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+
+/***
+ISLAMIC CALENDER
+****/
+.hero .calender-container{
+  width: 100%;
+  max-width: 400px;
+  height: 6.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  position: relative;
+  padding: .3rem 0; 
+  border-bottom: 0.1px solid rgba(87, 168, 65, 0.219);
+}
+
+
+.calender-container .calender-left{
+  width: 45%;
+  top: 1rem;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  position: relative;
+}
+
+.calender-container .calender-right{
+  width: 55%;
+  display: flex;
+  top: 1rem;
+  align-items: center;
+  justify-content: end;
+  position: relative;
+}
+
+.islamic-calender{
+  max-width: 150px;
+  height: 110px;
+  color: rgb(144, 241, 196);
+  font-size: .7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.islamic-calender h3{
+  font-family: "poppins" sans-serif;
+  font-size: 1rem;
+  color: rgb(205, 241, 40);
+}
+
+
+
+.hijri-date {
+  font-size: .8rem !important;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.gregorian-date{
+  font-size: .8rem;
+  opacity: .85;
+}
+
+/***
+CALENDER ENDS
+***/
+
+/***
+RAMADAN COUNTDOWN
+***/
+.ramadan-countdown {
+  max-width: 250px;
+  height: 6rem;
+  margin: 1rem auto;
+  display: flex;
+  padding-top: 1rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.);
+  margin-bottom: 3rem;
+}
+
+.ramadan-countdown h3 {
+  margin-bottom: -1.2rem;
+  font-size: .8rem;
+}
+
+.ramadan-countdown h3 img{
+  width: 8rem;
+  height: 4.5rem;
+}
+.ramadan-countdown p {
+  font-size: .7rem !important;
+  font-weight: 500;
+  color: rgb(143, 223, 106)
+}
+/***
+ENDS
+***/
+
+/***HERO SECTION***/
+.hero-container{
+  width: 100%;
+  height: 13rem;
+  display: flex;
+  gap: 1rem;
+  top: 4rem;
+  background: rgba(159, 207, 159, 0.233);
+  position: relative;
+  align-items: center;
+  overflow: hidden;
+  justify-content: space-between;
+  padding: .2rem .5rem;
+}
+
+
+
+
+
+
+
+
+
+.container {
+  width: 94%;
+  max-width: 1100px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  justify-content: center;
+}
+.container small{
+  font-size: 1rem;
+  align-self: center;
+  margin-left: 4rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container h2{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.3rem;
+}
+
+.container strong{
+  color: var(--btn-bg-cl);
+  font-size: 1.3rem;
+}
+
+
+
+
+.hero h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  margin-bottom: 25px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.1rem;
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  gap: 32px;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 12px 44px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .2s ease;
+}
+
+.btn:hover{
+  background: var(--btn-hover-cl);
+}
+
+.primary {
+  background: var(--btn-bg-cl);
+  color: white;
+  border: none;
+}
+
+.shop {
+  background: var(--cta-btn);
+}
+
+.shop:hover{
+  background: var(--btn-hover-cl-2);
+}
+
+.outline {
+  border: 2px solid white;
+  color: white;
+}
+
+/***--FEATURED SECTION---****/
+.featured-container{
+  width: 100%;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  justify-content: center;
+  justify-self: center;
+  background: var(--background-cl);
+  position: relative;
+  flex-direction: column;
+  padding: .5rem 0;
+  margin-top: .2rem;
+}
+
+.section-featured-title{
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.section-featured-title h2{
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.section-featured-title p{
+  font-size: 1.2rem;
+  font-family: monospace;
+  font-weight: 500;
+}
+
+/* featured card */
+.featured-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  width: 98%;
+  height: max-content;
+  position: relative;
+  align-items: center;
+  justify-self: center;
+  justify-content: center;
+}
+
+/***
+product card
+***/
+
+.featured-card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  gap: .1rem;
+  height: 22rem;
+  border: 1px solid var(--products-card-borer);
+  border-radius: 1rem;
+}
+
+.featured-card .featured-card-top{
+width: 100%;
+height: 15rem;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: .5rem;
+}
+
+.featured-card-top .img-container{
+  width: 99%;
+  height: 99%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: rgba(187, 179, 179, 0.808);
+  border-radius: .5rem;
+
+}
+
+.img-container img{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: .5rem;
+  position: absolute;
+}
+
+
+
+.featured-card .featured-card-btom{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 98%;
+  height: 6rem;
+  position: relative;
+  gap: .1rem;
+}
+
+/**
+flex top btom
+***/
+.featured-card-btom .btom-top{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(212, 46, 46, 0.336);
+ }
+
+/**
+flex btom btom
+***/
+.featured-card-btom .btom-bottom{
+  display: flex;
+  width: 100%;
+  height: 50%;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  gap: .1rem;
+}
+
+
+/***
+bottom left div
+***/
+.btom-bottom .btom-bottom-left{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .05rem;
+  justify-content: center;
+  border: 1px solid rgb(149, 175, 78);
+}
+
+.btom-bottom-left .bottom-left-top-star{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .1rem;
+  background: red;
+}
+
+.btom-bottom-left .bottom-left-bottom-price{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .1rem;
+  background: rgb(38, 79, 214);
+}
+
+
+
+
+.btom-bottom .btom-bottom-right{
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid  rgb(184, 180, 180);
+}
+
+
+/*****
+DELIVERY INFORMATION
+*******/
+.informations{
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  padding: .3rem  .6rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: .4rem;
+}
+
+.informations .infor-cards{
+  width: 23%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(224, 219, 219);
+  flex-direction: column;
+}
+
+.infor-cards p{
+  font-size: .7rem;
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.infor-cards img{
+  width: 60%;
+  height: 60%;
+  background: rgb(231, 233, 238);
+  padding: .5rem;
+  border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SECTIONS */
+.section {
+  padding: 60px 0;
+}
+
+.section.light {
+  background: white;
+}
+
+.section-title {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 40px;
+}
+
+/* PRODUCTS */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 2px 2px 6px rgba(185, 185, 185, 0.5), -2px -2px 6px rgba(185, 185, 185, 0.5);
+}
+
+.product-card h3{
+  color: var(--main-txt);
+  font-size: 1.2rem;
+  font-family: "poppins" sans-serif;
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.price {
+  color: var(--hero-section-bg);
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+/* FEATURES */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.feature {
+  background: rgb(255, 255, 255);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 2px 2px 6px rgba(182, 181, 181, 0.5) , -2px -2px 6px rgba(182, 182, 182, 0.5);
+}
+
+.feature h4{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  color: rgb(44, 54, 63);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.feature p{
+  font-family: "inter" Arial;
+  color: var(--muted-txt);
+}
+
+.feature img{
+  width: 1.6rem;
+  height: 1.4rem;
+}
+
+.feature .flag{
+  width: 1.6rem;
+  height: .85rem;
+}
+
+/* FOOTER */
+.footer {
+  display: flex;
+  width: 100%;
+  height: 5rem;
+  padding: 0;
+  background: #faf9f9;
+  margin-top: .5rem;
+  border-top: 0.1px solid rgb(236, 233, 233);
+  color: #352e2e;
+  box-shadow: 2px 6px 0 rgba(78, 76, 76, 0.4);
+  text-align: center;
+  padding: 20px 0;
+}
