@@ -91,17 +91,17 @@ function loadIslamicDate() {
     year: "numeric"
   });
 
-  // Hijri date (FULL Islamic calendar)
-  const hijriFormatter = new Intl.DateTimeFormat(
-    "en-TN-u-ca-islamic",
-    {
-      day: "numeric",
-      month: "long",
-      year: "numeric"
-    }
-  );
+// Hijri date (Arabic – most accurate)
+const hijriFormatter = new Intl.DateTimeFormat(
+  "ar-SA-u-ca-islamic",
+  {
+    day: "numeric",
+    month: "long",
+    year: "numeric"
+  }
+);
 
-  const hijriDate = hijriFormatter.format(today);
+const hijriDate = hijriFormatter.format(today);
 
   document.getElementById("hijriDate").textContent =
     hijriDate + " AH";
