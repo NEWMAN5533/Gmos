@@ -79,34 +79,39 @@ document.addEventListener("DOMContentLoaded",
   updateCartCount
 );
 
-
-// ISLAMIC CALENDER
+// ISLAMIC CALENDAR
 function loadIslamicDate() {
   const today = new Date();
 
-  // gregorian date
-  const gregorian = 
-  today.toLocaleDateString("en-GB", {
+  // Gregorian date
+  const gregorianDate = today.toLocaleDateString("en-GB", {
     weekday: "long",
-    year: "numeric",
-    month: "long",
-    day: "numeric"
-  });
-
-  // hijri date
-  const hijri = new
-  Intl.DateTimeFormat("en-TN-u-ca-islamic", {
     day: "numeric",
     month: "long",
     year: "numeric"
-  }).format(today);
+  });
 
-  document.getElementById("hijriDate").textContent = hijri + "AH";
+  // Hijri date (FULL Islamic calendar)
+  const hijriFormatter = new Intl.DateTimeFormat(
+    "en-TN-u-ca-islamic",
+    {
+      day: "numeric",
+      month: "long",
+      year: "numeric"
+    }
+  );
 
-  document.getElementById("gregorianDate").textContent = gregorian;
+  const hijriDate = hijriFormatter.format(today);
+
+  document.getElementById("hijriDate").textContent =
+    hijriDate + " AH";
+
+  document.getElementById("gregorianDate").textContent =
+    gregorianDate;
 }
 
-document.addEventListener("DOMContentLoaded", 
+document.addEventListener(
+  "DOMContentLoaded",
   loadIslamicDate
 );
 
