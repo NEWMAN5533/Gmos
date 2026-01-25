@@ -197,13 +197,12 @@ ISLAMIC CALENDER
   align-content: center;
   position: relative;
   padding: .3rem 0; 
-  border-bottom: 0.1px solid rgba(87, 168, 65, 0.219);
 }
 
 
 .calender-container .calender-left{
   width: 45%;
-  top: 1rem;
+  top: 1.4rem;
   display: flex;
   align-items: start;
   justify-content: start;
@@ -213,7 +212,7 @@ ISLAMIC CALENDER
 .calender-container .calender-right{
   width: 55%;
   display: flex;
-  top: 1rem;
+  top: .3rem;
   align-items: center;
   justify-content: end;
   position: relative;
@@ -222,7 +221,7 @@ ISLAMIC CALENDER
 .islamic-calender{
   max-width: 150px;
   height: 110px;
-  color: rgb(144, 241, 196);
+  color: rgb(190, 209, 200);
   font-size: .7rem;
   display: flex;
   flex-direction: column;
@@ -237,7 +236,7 @@ ISLAMIC CALENDER
 .islamic-calender h3{
   font-family: "poppins" sans-serif;
   font-size: 1rem;
-  color: rgb(205, 241, 40);
+  color: rgb(202, 212, 155);
 }
 
 
@@ -286,9 +285,9 @@ RAMADAN COUNTDOWN
   height: 4.5rem;
 }
 .ramadan-countdown p {
-  font-size: .7rem !important;
+  font-size: .8rem !important;
   font-weight: 500;
-  color: rgb(143, 223, 106)
+  color: rgb(203, 231, 191)
 }
 /***
 ENDS
