@@ -496,7 +496,7 @@ product card
   gap: .1rem;
   height: 22rem;
   border: 1px solid var(--products-card-borer);
-  border-radius: 1rem;
+  border-radius: .8rem;
 }
 
 .featured-card .featured-card-top{
@@ -551,27 +551,39 @@ flex top btom
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(212, 46, 46, 0.336);
  }
 
  .btom-top .pdt-badge{
   width: 100%;
   height: 35%;
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: start;
-  background: red;
-  text-align: center;
-  padding: .2rem .6rem;
+  padding-left:  .5rem;
+  padding-bottom: .3rem;
+ }
+
+ .btom-top .pdt-badge small{
+  font-size: .6rem;
+  color: var(--main-txt);
  }
 
  .btom-top .pdt-title{
   width: 100%;
+  max-width: 99%;
+  flex-wrap: wrap;
+  text-align: center;
   height: 65%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: blue;
+  overflow: hidden;
+ }
+
+ .pdt-title p{
+  font-size: .85rem;
+  color: var(--main-txt);
  }
 
 /**
@@ -597,9 +609,8 @@ bottom left div
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: .05rem;
+  gap: .1rem;
   justify-content: center;
-  border: 1px solid rgb(149, 175, 78);
 }
 
 .btom-bottom-left .bottom-left-top-star{
@@ -609,7 +620,7 @@ bottom left div
   align-items: center;
   justify-content: center;
   padding: .1rem;
-  background: red;
+  border: 0.1px solid rgb(219, 213, 213);
 }
 
 .btom-bottom-left .bottom-left-bottom-price{
@@ -619,7 +630,13 @@ bottom left div
   align-items: center;
   justify-content: center;
   padding: .1rem;
-  background: rgb(38, 79, 214);
+}
+
+.bottom-left-bottom-price .pdt-price{
+  font-size: .8rem;
+  color: rgb(31, 31, 41);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
 }
 
 
@@ -631,7 +648,18 @@ bottom left div
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid  rgb(184, 180, 180);
+}
+
+.btom-bottom-right .buy-btn{
+  width: 90%;
+  height: 1.8rem;
+  border: none;
+  background: rgb(22, 110, 22);
+  color: rgb(238, 232, 232);
+  font-size: .9rem;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(77, 76, 76, 0.2);
 }
 
 /***
