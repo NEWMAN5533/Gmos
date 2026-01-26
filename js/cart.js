@@ -142,3 +142,43 @@ function ramadanCountdown() {
 
 setInterval(ramadanCountdown, 60000);
 ramadanCountdown();
+
+
+
+// STAR RATING DISPLAY
+const starSVG = `
+<path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24
+l-7.19-.61L12 2 9.19 8.63 2 9.24
+l5.46 4.73L5.82 21z"/>
+`;
+
+document.querySelectorAll(".star").forEach(star => {
+  star.innerHTML = starSVG;
+});
+
+document.querySelectorAll(".star").forEach(star => {
+  star.innerHTML = starSVG;
+});
+
+
+let currentRating = 0;
+const stars = document.querySelector(".star");
+const ratingText = document.querySelector(".ratingValue");
+
+stars.forEach(star => {
+  star.addEventListener("click", () => {
+    currentRating = star.dataset.value;
+    updateStars(currentRating);
+    ratingText.textContent = `Rating: ${currentRating}`;
+  });
+});
+
+function updateStars(rating) {
+  stars.forEach(star => {
+    star.classList.toggle("active",
+      star.dataset.value <= rating
+    );
+  });
+}
+
+// ends
