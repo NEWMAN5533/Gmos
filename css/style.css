@@ -461,12 +461,15 @@ ENDS
   font-size: 2rem;
   font-weight: 600;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgb(69, 75, 83);
 }
 
 .section-featured-title p{
   font-size: 1.2rem;
   font-family: monospace;
   font-weight: 500;
+  font-family: system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, 'Helvetica Neue', sans-serif;
+  color: rgb(54, 60, 73);
 }
 
 /* featured card */
@@ -553,16 +556,71 @@ flex top btom
   justify-content: center;
  }
 
+
+
+
  .btom-top .pdt-badge{
   width: 100%;
   height: 35%;
   display: flex;
   position: relative;
   align-items: center;
+  gap: 1rem;
   justify-content: start;
   padding-left:  .5rem;
   padding-bottom: .3rem;
  }
+
+ .pdt-badge .badge-left{
+  width: 50;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-items: start;
+  position: relative;
+ }
+
+ .pdt-badge .badge-right{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  position: relative;
+ }
+
+ .badge-right #ratingValue {
+  color: rgb(120, 127, 129);
+  font-size: .7rem;
+  margin-left: .2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+ }
+
+ .badge-right img{
+  width: 1rem;
+  height: .8rem;
+ }
+
+ .badge-right .icon-star {
+  width: 14px;
+  height: 14px;
+  fill: #ccc;
+  transition: fill .2s ease;
+  cursor: pointer;
+ }
+
+ .badge-right .icon-star.active{
+  fill: #D4AF37; /* Islamic gold */
+ }
+
+ .ratingValue {
+  color: #555;
+  font-size: 12px;
+  margin-left: .2rem;
+ }
+
+
 
  .btom-top .pdt-badge small{
   font-size: .55rem;
@@ -581,6 +639,9 @@ flex top btom
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  background: rgba(235, 236, 236, 0.555);
+  border-right: 3px solid rgba(60, 78, 92, 0.267);
+  border-left: 3px solid rgba(60, 78, 92, 0.267);
  }
 
  .pdt-title p{
@@ -621,13 +682,13 @@ bottom left div
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: .1rem;
+  padding-top: .8rem;
 }
 
 .bottom-left-top-star .old-price {
-  font-size: .7rem;
+  font-size: .8rem;
   text-decoration: line-through;
-  color: rgb(104, 121, 109);
+  color: rgba(155, 134, 91, 0.863);
 }
 
 
@@ -642,15 +703,10 @@ bottom left div
 
 }
 
-.btom-bottom-left #ratingValue{
-font-size: .7rem;
-margin-top: .4rem;
-color: rgb(89, 89, 97);
-}
 
 .bottom-left-bottom-price .pdt-price{
-  font-size: .8rem;
-  color: rgb(31, 31, 41);
+  font-size: .9rem;
+  color: rgb(83, 83, 99);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 600;
 }

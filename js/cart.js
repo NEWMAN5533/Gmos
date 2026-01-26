@@ -146,39 +146,34 @@ ramadanCountdown();
 
 
 // STAR RATING DISPLAY
-const starSVG = `
-<path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24
-l-7.19-.61L12 2 9.19 8.63 2 9.24
-l5.46 4.73L5.82 21z"/>
-`;
+document.querySelectorAll(".rating-container").forEach(container => {
+  let selectedRating = 0; // stores user selection
+  const stars = container.querySelectorAll(".icon-star");
+  const ratingValue = container.querySelector(".ratingValue");
+  const productId = container.closest(".pdt-badge").dataset.productId;
 
-document.querySelectorAll(".star").forEach(star => {
-  star.innerHTML = starSVG;
-});
-
-document.querySelectorAll(".star").forEach(star => {
-  star.innerHTML = starSVG;
-});
-
-
-let currentRating = 0;
-const stars = document.querySelector(".star");
-const ratingText = document.querySelector(".ratingValue");
-
-stars.forEach(star => {
-  star.addEventListener("click", () => {
-    currentRating = star.dataset.value;
-    updateStars(currentRating);
-    ratingText.textContent = `Rating: ${currentRating}`;
-  });
-});
-
-function updateStars(rating) {
+  // Hover + Click logic
   stars.forEach(star => {
-    star.classList.toggle("active",
-      star.dataset.value <= rating
-    );
+    const value = parseInt(star.dataset.value);
+
+    // Hover preview
+    star.addEventListener("mouseenter", () => highlightStars(value));
+    star.addEventListener("mouseleave", () => highlightStars(selectedRating));
+
+    // Click to select
+    star.addEventListener("click", () => {
+      selectedRating = value;
+      ratingValue.textContent = selectedRating;
+      highlightStars(selectedRating);
+
+      console.log(`Product: ${productId}, User rated: ${selectedRating}`);
+      // 👉 Save rating to Firebase here
+    });
   });
-}
+
+  function highlightStars(value) {
+    stars.forEach(s => s.classList.toggle("active", s.dataset.value <= value));
+  }
+});
 
 // ends
