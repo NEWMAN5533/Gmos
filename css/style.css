@@ -570,7 +570,7 @@ flex top btom
 ***/
 .featured-card-btom .btom-top{
   width: 100%;
-  height: 50%;
+  height: 60%;
   display: flex;
   gap: .2rem;
   flex-direction: column;
@@ -583,7 +583,7 @@ flex top btom
 
  .btom-top .pdt-badge{
   width: 100%;
-  height: 35%;
+  height: 30%;
   display: flex;
   position: relative;
   align-items: center;
@@ -664,7 +664,7 @@ flex top btom
   width: 100%;
   max-width: 99%;
   text-align: center;
-  height: 65%;
+  height: 70%;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -680,9 +680,9 @@ flex top btom
  }
 
  .pdt-title p{
-  font-size: .85rem;
+  font-size: .8rem;
   color: var(--muted-txt);
-  font-weight: 700;
+  font-weight: 600;
  }
 
 /**
@@ -691,7 +691,7 @@ flex btom btom
 .featured-card-btom .btom-bottom{
   display: flex;
   width: 100%;
-  height: 50%;
+  height: 40%;
   position: relative;
   align-items: center;
   justify-content: space-between;
