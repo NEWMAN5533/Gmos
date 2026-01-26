@@ -663,7 +663,7 @@ flex top btom
  .btom-top .pdt-title{
   width: 100%;
   max-width: 99%;
-  text-align: center;
+  text-align: start;
   height: 70%;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -708,7 +708,7 @@ bottom left div
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: .1rem;
+  gap: .2rem;
   justify-content: center;
 }
 
@@ -735,7 +735,7 @@ bottom left div
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: .4rem;
+  margin-bottom: .1rem;
 
 }
 
