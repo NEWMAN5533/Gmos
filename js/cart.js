@@ -148,6 +148,8 @@ ramadanCountdown();
 // STAR RATING DISPLAY
 document.querySelectorAll(".rating-container").forEach(container => {
   let selectedRating = 0; // stores user selection
+  let initialValue = 3;
+
   const stars = container.querySelectorAll(".icon-star");
   const ratingValue = container.querySelector(".ratingValue");
   const productId = container.closest(".pdt-badge").dataset.productId;
