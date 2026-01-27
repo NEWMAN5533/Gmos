@@ -708,7 +708,7 @@ bottom left div
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: .2rem;
+  gap: .3rem;
   justify-content: center;
 }
 
@@ -722,7 +722,7 @@ bottom left div
 }
 
 .bottom-left-top-star .old-price {
-  font-size: .8rem;
+  font-size: .74rem;
   text-decoration: line-through;
   color: rgba(129, 74, 29, 0.863);
 }
