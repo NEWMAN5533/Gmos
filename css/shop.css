@@ -1,4 +1,3 @@
-
 :root{
   --primary-cl: #0F5132;
   --secondary-cl: #F8F9FA;
@@ -79,7 +78,7 @@ NAVBAR
 .navbar{
   width: 100%;
   max-width: 480px;
-  height: 4rem;
+  height: 3rem;
   display: flex;
   position: fixed;
   background: var(--background-cl);
@@ -106,14 +105,14 @@ position: relative;
 .navbar-left p{
 color:  rgb(38, 126, 77);
 font-weight: 500;
-font-size: 1.2rem;
+font-size: 1rem;
 margin-top: 1rem;
 margin-right: .5rem;
 }
 
 .navbar-left img{
-  width: 3.2rem;
-  height: 3.2rem;
+  width: 2.2rem;
+  height: 2.2rem;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -128,6 +127,28 @@ margin-right: .5rem;
   gap: 1rem;
   padding: 0 1rem;
   position: relative;
+}
+
+.nav-right #searchInput{
+  border: 1px solid rgb(212, 205, 205);
+  height: 1.5rem;
+  padding: .2rem .4rem;
+  border-radius: 1rem;
+  background: var(--background-cl);
+  margin-top: .3rem;
+  width: 100%;
+  max-width: 80%;
+}
+
+.nav-right #searchInput::placeholder{
+  font-size: .7rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav-right img{
+  width: 1.4rem;
+  height: 1.2rem;
+  cursor: pointer;
 }
 
 .nav-right a{
@@ -145,8 +166,8 @@ margin-right: .5rem;
 
 
 .nav-right a img{
-  width: 1.4rem;
-  height: 1.3rem;
+  width: 1.1rem;
+  height: 1.1rem;
   margin-right: .8rem;
   margin-bottom: .4rem;
 }
@@ -154,7 +175,7 @@ margin-right: .5rem;
 .cart-btn #cart-count{
 margin-bottom: -.6rem;
 margin-left: .4rem;
-font-size: 1rem;
+font-size: .8rem;
 color: rgb(163, 107, 107);
 }
 
@@ -173,308 +194,105 @@ color: rgb(163, 107, 107);
   cursor: pointer;
 }
 
+/***
+MAIN SHOP CONTAINER
+****/
+.main-shop-container{
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  border: 1px solid rgb(228, 222, 222);
+  left: 0;
+  right: 0;
+  top: 3.3rem;
+  position: relative;
+  justify-self: center;
+  padding: .4rem;
+}
+
+.main-shop-container .filter-navbar {
+ width: 100%;
+ height: 3rem;
+ display: flex;
+ justify-content: space-between;
+ border: 1px solid rgb(224, 217, 217);
+ position: relative;
+ align-content: center;
+ align-items: center;
+ padding: .1rem .5rem;
+ overflow: hidden;
+}
+
+/***
+left filters
+**/
+.filter-navbar .filter-title{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: start;
+  position: relative;
+  gap: .5rem
+}
+
+.filter-title small{
+  font-size: .9rem;
+  color: var(--main-txt);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/***
+right filter
+***/
+.filter-navbar .filters {
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  justify-items: center;
+  justify-content: end;
+  display: flex;
+  position: relative;
+  gap: .5rem
+}
+
+.filters button{
+  border: none;
+  padding: .3rem;
+  background: rgba(46, 57, 71, 0.781);
+  color: white;
+  border-radius: 3px;
+}
+
+
 
 
 /****
-MAIN SECTION CONTAINER
+SECTION PRODUCTS
 *****/
-.main-container-wrapper{
-  width: 100%;
-  max-width: 480px;
-  height: max-content;
-  padding: .3rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  justify-self: center;
-  overflow: hidden;
-  position: relative;
-  margin-top: 4.3rem;
-  background-color: var(--background-cl);
-  border: 0.1px solid rgb(207, 198, 198);
+.main-shop-container .grid-products-container{
+width: 100%;
+height: max-content;
+display: flex;
+border: 1px solid rgb(228, 222, 222);
+margin-top: .2rem;
+background: white;
+position: relative;
+flex-direction: column;
+gap: .6rem;
+justify-self: center;
+padding: .4rem 0;
+justify-content: center;
+align-items: center;
 }
 
-
-/* HERO */
-.hero {
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 1rem;
-  height: max-content;
-  background: var(--hero-section-bg);
-  color: white;
-  padding: 10px;
-  text-align: center;
-}
-
-
-/***
-ISLAMIC CALENDER
+/****
+GRID CARD CONTAINER
 ****/
-.hero .calender-container{
-  width: 100%;
-  max-width: 100%;
-  height: 6.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-  position: relative;
-  padding: .3rem 0; 
-  background: rgba(199, 195, 195, 0.041);
-  justify-self: center;
-  border: 0.1px solid rgba(255, 255, 255, 0.137);
-}
-
-
-.calender-container .calender-left{
-  width: 45%;
-  top: 1.4rem;
-  display: flex;
-  align-items: start;
-  justify-content: start;
-  position: relative;
-  margin-left: -1rem;
-}
-
-.calender-container .calender-right{
-  width: 55%;
-  display: flex;
-  top: .3rem;
-  align-items: center;
-  justify-content: end;
-  position: relative;
-}
-
-.islamic-calender{
-  max-width: 150px;
-  height: 110px;
-  color: rgb(190, 209, 200);
-  font-size: .7rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 5px;
-  border-radius: 16px;
-  text-align: center;
-}
-
-.islamic-calender h3{
-  font-family: "poppins" sans-serif;
-  font-size: 1rem;
-  color: rgb(202, 212, 155);
-}
-
-
-
-.hijri-date {
-  font-size: .8rem !important;
-  font-weight: 500;
-  margin-bottom: 5px;
-}
-
-.gregorian-date{
-  font-size: .8rem;
-  opacity: .85;
-}
-
-/***
-CALENDER ENDS
-***/
-
-/***
-RAMADAN COUNTDOWN
-***/
-.ramadan-countdown {
-  max-width: 250px;
-  height: 6rem;
-  margin: 1rem auto;
-  display: flex;
-  padding-top: 1rem;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  color: #fff;
-  border-radius: 16px;
-  text-align: center;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.);
-  margin-bottom: 3rem;
-}
-
-.ramadan-countdown h3 {
-  margin-bottom: -1.2rem;
-  font-size: .8rem;
-}
-
-.ramadan-countdown h3 img{
-  width: 8rem;
-  height: 4.5rem;
-}
-.ramadan-countdown p {
-  font-size: .8rem !important;
-  font-weight: 500;
-  color: rgb(203, 231, 191)
-}
-/***
-ENDS
-***/
-
-/***HERO SECTION***/
-.hero-container{
-  width: 100%;
-  height: 13rem;
-  display: flex;
-  gap: 1rem;
-  top: 4rem;
-  background: rgba(159, 207, 159, 0.233);
-  position: relative;
-  align-items: center;
-  overflow: hidden;
-  justify-content: space-between;
-  padding: .2rem .5rem;
-}
-
-
-
-
-
-
-
-
-
-.container {
-  width: 94%;
-  max-width: 1100px;
-  margin: auto;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  justify-content: center;
-}
-.container small{
-  font-size: 1rem;
-  align-self: center;
-  margin-left: 4rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.container h2{
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 1.3rem;
-}
-
-.container strong{
-  color: var(--btn-bg-cl);
-  font-size: 1.3rem;
-}
-
-
-
-
-.hero h1 {
-  font-family: "Poppins", sans-serif;
-  font-size: 2.2rem;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  margin-bottom: 25px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 1.1rem;
-}
-
-.hero-buttons {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  justify-content: center;
-  gap: 32px;
-}
-
-/* BUTTONS */
-.btn {
-  padding: 12px 44px;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: 500;
-  cursor: pointer;
-  transition: .2s ease;
-}
-
-.btn:hover{
-  background: var(--btn-hover-cl);
-}
-
-.primary {
-  background: var(--btn-bg-cl);
-  color: white;
-  border: none;
-}
-
-.shop {
-  background: var(--cta-btn);
-}
-
-.shop:hover{
-  background: var(--btn-hover-cl-2);
-}
-
-.outline {
-  border: 2px solid white;
-  color: white;
-}
-
-
-
-/***--FEATURED SECTION---****/
-.featured-container{
-  width: 100%;
-  height: max-content;
-  display: flex;
-  align-items: center;
-  gap: .5rem;
-  justify-content: center;
-  justify-self: center;
-  background: var(--background-cl);
-  position: relative;
-  flex-direction: column;
-  padding: .5rem 0;
-  margin-top: .2rem;
-}
-
-.section-featured-title{
-  width: 100%;
-  height: max-content;
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-  position: relative;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-}
-
-.section-featured-title h2{
-  font-size: 2rem;
-  font-weight: 600;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: rgb(69, 75, 83);
-}
-
-.section-featured-title p{
-  font-size: 1.2rem;
-  font-family: monospace;
-  font-weight: 500;
-  font-family: system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, 'Helvetica Neue', sans-serif;
-  color: rgb(54, 60, 73);
-}
-
-/* featured card */
-.featured-grid{
+.grid-products-container .featured-grid{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
@@ -485,6 +303,7 @@ ENDS
   justify-self: center;
   justify-content: center;
 }
+
 
 /***
 product card
@@ -784,205 +603,3 @@ bottom left div
 
 
 
-
-
-
-/***
-SECTION BORDER
-*****/
-.border-div{
-  width: 100%;
-  max-width: 100%;
-  height: max-content;
-  display: flex;
-  background: rgba(217, 221, 221, 0.521);
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1rem;
-}
-
-
-/*****
-DELIVERY INFORMATION
-*******/
-.informations{
-  width: 100%;
-  height: 6rem;
-  display: flex;
-  padding: .3rem  .6rem;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 2rem;
-}
-
-.informations .infor-cards{
-  width: 23%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid rgb(218, 211, 211);
-  flex-direction: column;
-  cursor: pointer;
-  gap: .4rem;
-  border-radius: .3rem;
-}
-
-.infor-cards p{
-  font-size: .7rem;
-  font-weight: 600;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: rgb(54, 64, 66);
-}
-
-.infor-cards img{
-  width: 60%;
-  height: 60%;
-  background: rgb(218, 219, 221);
-  padding: .5rem;
-  border-radius: 8px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* SECTIONS */
-.section {
-  padding: 30px 0;
-}
-
-.section.light {
-  background: white;
-}
-
-.section-title {
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  margin-bottom: 40px;
-}
-
-/* PRODUCTS */
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
-
-.product-card {
-  background: white;
-  border-radius: 12px;
-  padding: 15px;
-  text-align: center;
-  box-shadow: 2px 2px 6px rgba(185, 185, 185, 0.5), -2px -2px 6px rgba(185, 185, 185, 0.5);
-}
-
-.product-card h3{
-  color: var(--main-txt);
-  font-size: 1.2rem;
-  font-family: "poppins" sans-serif;
-}
-
-.product-card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.price {
-  color: var(--hero-section-bg);
-  font-weight: 600;
-  margin: 10px 0;
-}
-
-/* FEATURES */
-.features {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
-
-.feature {
-  background: rgb(255, 255, 255);
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 2px 2px 6px rgba(182, 181, 181, 0.5) , -2px -2px 6px rgba(182, 182, 182, 0.5);
-}
-
-.feature h4{
-  display: flex;
-  align-items: center;
-  gap: .5rem;
-  color: rgb(44, 54, 63);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.feature p{
-  font-family: "inter" Arial;
-  color: var(--muted-txt);
-}
-
-.feature img{
-  width: 1.6rem;
-  height: 1.4rem;
-}
-
-.feature .flag{
-  width: 1.6rem;
-  height: .85rem;
-}
-
-/* FOOTER */
-.footer {
-  display: flex;
-  width: 100%;
-  height: 5rem;
-  padding: 0;
-  background: #faf9f9;
-  margin-top: .5rem;
-  border-top: 0.1px solid rgb(236, 233, 233);
-  color: #352e2e;
-  box-shadow: 2px 6px 0 rgba(78, 76, 76, 0.4);
-  text-align: center;
-  padding: 20px 0;
-}
-
-
-/**** SHOP.HTML ********/
-.products-container{
-width: 100%;
-  height: max-content;
-  display: flex;
-  align-items: center;
-  gap: .5rem;
-  justify-content: center;
-  justify-self: center;
-  background: var(--background-cl);
-  position: relative;
-  flex-direction: column;
-  padding: .5rem 0;
-  margin-top: .2rem;
-}
