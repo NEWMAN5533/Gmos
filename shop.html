@@ -35,14 +35,30 @@
     <section class="main-shop-container">
       <!---filter & collections-nav-->
     <section class="filter-navbar">
-      <div class="filter-title">
-        <small>Filter:</small>
-        <button class="filter-categories">
-          Categories
-          <img src="./css/icons/more.png.png" alt="" loading="lazy">
-        </button>
-        
-      </div>
+      <section class="filter-wrapper">
+        <!---filter-wrapper-top-flex-->
+        <div class="filter-title">
+          <small>Filter:</small>
+          <button class="filter-categories" id="toggleCats">
+            Categories
+            <img src="./css/icons/more.png.png" alt="" loading="lazy">
+          </button>
+        </div>
+        <!---filter-wrapper-top-column-optionCAtegories-->
+          <!---select-drop-down-->
+        <div class="select-dropdown" style="display: none;">
+          <div class="optionCategory" data-option="Men (Muslimin)"><span>Men (Muslimin)</span></div>
+          <div class="optionCategory" data-option="Women (Muslimaat)"><span>Women (Muslimaat)</span></div>
+          <div class="optionCategory" data-option="Boys"><span>Boys</span></div>
+          <div class="optionCategory" data-option="Girls"><span>Girls</span></div>
+          <div class="optionCategory" data-option="Kids"><span>Kids</span></div>
+          <div class="optionCategory" data-option="Home & Kitchen"><span>Home & Kitchen</span></div>
+          <div class="optionCategory" data-option="Luxuries & Beauty"><span>Luxuries & Beauty</span></div>
+          <div class="optionCategory" data-option="Health"><span>Health</span></div>
+          <div class="optionCategory" data-option="Accessories"><span>Accessories</span></div>
+          <div class="optionCategory" data-option="Books (kitab)"><span>Books (Kitab)</span></div>
+        </div>
+      </section>
           <!-- FILTER BAR -->
         <div class="filters">
           <!----filter-sort-->
@@ -51,6 +67,8 @@
           <button data-filter="low"> Lowest price</button>
         </div>
     </section>
+
+
           <!-- FEATURED PRODUCTS -->
       <section class="grid-products-container">
         <!---products-title-cta-->

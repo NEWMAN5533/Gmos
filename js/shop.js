@@ -1,15 +1,4 @@
 
-
-
-
-
-
-
-
-
-
-
-
 // STAR RATING DISPLAY
 document.querySelectorAll(".rating-container").forEach(container => {
   let selectedRating = 0; // stores user selection
@@ -43,3 +32,21 @@ document.querySelectorAll(".rating-container").forEach(container => {
 });
 
 // ends
+
+// FILTER CATEGORIES JS
+const filterBtn = document.getElementById("toggleCats");
+const filterDropDown = document.querySelector(".select-dropdown");
+
+filterBtn.addEventListener("click", (e) => {
+  (e).stopPropagation();
+  filterDropDown.style.display = filterDropDown.style.display === "flex" ?
+  "none" : "flex";
+});
+
+filterDropDown.addEventListener("click", (e) => {
+  e.stopPropagation();
+});
+
+window.addEventListener("click" , () => {
+  filterDropDown.style.display = "none";
+})
