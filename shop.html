@@ -20,7 +20,10 @@
         <a href="index.html"><img src="./css/icons/logo1.jpeg" alt="logo"></a><p>GMOS</p></div>
 
       <div class="nav-right">
-        <input type="search" placeholder="Search products…" id="searchInput"/>
+        <div class="search">
+          <input type="search" placeholder="Search products…" id="searchInput"/>
+        <img src="./css/icons/search.png.png" alt="" loading="lazy">
+        </div>
 
         <a href="cart.html" class="cart-btn"><span id="cart-count">0</span><img class="icon" src="./css/icons/totalorder.png" alt="cart" loading="lazy"></a>
         <!----menu-icon-->
@@ -34,18 +37,17 @@
     <section class="filter-navbar">
       <div class="filter-title">
         <small>Filter:</small>
-        <select name="value" id="filterValue">
-          <option value="categories">Collections</option>
-          <option value="categories">categories</option>
-          <option value="categories">categories</option>
-          <option value="categories">categories</option>
-          <option value="categories">categories</option>
-        </select>
+        <button class="filter-categories">
+          Categories
+          <img src="./css/icons/more.png.png" alt="" loading="lazy">
+        </button>
+        
       </div>
           <!-- FILTER BAR -->
         <div class="filters">
+          <!----filter-sort-->
+          <small>Sort by:</small>
           <button data-filter="all" class="active">All</button>
-          <button data-filter="top"> 4 & up</button>
           <button data-filter="low"> Lowest price</button>
         </div>
     </section>
@@ -868,6 +870,15 @@
     </div>
       </section>
     </section>
+
+
+     <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2026 GMOS – Ghana Muslim Online Store</p>
+      <p>Built with trust & integrity</p>
+    </div>
+  </footer>
 
 <script src="./js/shop.js"></script>
 </body>
