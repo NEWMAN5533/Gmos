@@ -39,14 +39,14 @@ const filterDropDown = document.querySelector(".select-dropdown");
 
 filterBtn.addEventListener("click", (e) => {
   (e).stopPropagation();
-  filterDropDown.style.display = filterDropDown.style.display === "flex" ?
-  "none" : "flex";
+  filterDropDown.style.display = filterDropDown.style.display === 
+  "flex"? "none" : "flex";
 });
 
 filterDropDown.addEventListener("click", (e) => {
   e.stopPropagation();
 });
 
-window.addEventListener("click" , () => {
+window.addEventListener("click", () => {
   filterDropDown.style.display = "none";
-})
+});

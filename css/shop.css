@@ -11,6 +11,7 @@
   --background-cl: #F8F9FA;
   --links-cl: #0F5132;
   --btn-bg-cl: #0F5132;
+  --btn-cl: rgb(25, 129, 89);
   --btn-hover-cl: #0f492e;
   --btn-hover-cl-2:  #c4a236;
   --light-bg:  rgb(245, 241, 241);
@@ -489,6 +490,11 @@ align-items: center;
   font-weight: 600;
 }
 
+.products-count a{
+  text-decoration: none;
+  color:  #74787e;
+}
+
 .products-count img{
   width: 1.5rem;
   height: 40%;
@@ -496,7 +502,6 @@ align-items: center;
   display: flex;
   align-self: center;
   justify-self: center;
-  margin-top: .1rem;
 }
 
 /****
@@ -791,7 +796,7 @@ bottom left div
   width: 90%;
   height: 1.8rem;
   border: none;
-  background: rgb(25, 129, 89);
+  background: var(--btn-cl);
   color: rgb(238, 232, 232);
   font-size: .9rem;
   border-radius: 4px;

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GMOS – Ghana Muslim Online Store</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="shortcut icon" type="image/png" href="./css/icons/logo1.jpeg" />
+
+  <link rel="stylesheet" href="css/product-detail.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+      <div class="navbar-left">
+        <a href="shop.html"><img src="./css/icons/logo1.jpeg" alt="logo"></a><p>GMOS</p></div>
+
+      <div class="nav-right">
+        <a href="cart.html" class="cart-btn"><span id="cart-count">0</span><img class="icon" src="./css/icons/totalorder.png" alt="cart" loading="lazy"></a>
+        <!----menu-icon-->
+        <img src="./css/icons/menu-icon.png" alt="" loading="lazy">
+      </div>
+    </header>
+
+    <section class="main-shop-container">
+      <div class="product-detail">
+        <div class="product-img-container">
+          <img src="./css/products/product (8).jpeg" alt="" loading="lazy">
+        </div>
+        <!---js-imgs-toggle-->
+        <div class="js-imgs-container">
+          <div class="js-img">1</div>
+          <div class="js-img">2</div>
+          <div class="js-img">3</div>
+          <div class="js-img">4</div>
+        </div>
+        <!---products-info-->
+        <div class="product-info">
+          <h1 id="productTitle">Product Name</h1>
+        </div>
+        <!--product-rating-->
+        <div class="product-rating">
+          <div class="stars">
+            <!---reuse-stars-later-here-->
+          </div>
+          <span class="rating-text">(4.5)</span>
+        </div>
+        <!---span-price-->
+        <span class="price" id="productPrice">GHS 0.00</span>
+        <!---product-description--->
+        <div class="product-description" id="productDesc">
+          <!---product-desc-here--->
+          <h2>product description here</h2>
+        </div>
+        <!---seller-info-->
+      <div class="seller-card">
+
+  <!-- Seller Info -->
+  <div class="info-block">
+    <h4>Seller</h4>
+     <div class="seller-left">
+      <img src="./css/icons/seller.jpeg" alt="Seller" loading="lazy">
+    </div>
+    <div class="shadow-card">
+    <p class="info-title">Al-Noor Islamic Store</p>
+    <p class="info-sub"><img src="./css/icons/social1 (3).png" alt=""> Kumasi, Ghana</p>
+
+    <div class="info-badges">
+      <span class="badge verified">✔ Verified</span>
+      <span class="badge halal">☪ Halal Seller</span>
+    </div>
+    </div>
+  </div>
+
+  <!-- Delivery Info -->
+  <div class="info-block">
+    <h4>Delivery</h4>
+      <div class="seller-left">
+      <img src="./css/icons/delivery.gif" alt="Seller" loading="lazy">
+    </div>
+    <div class="shadow-card">
+    <p class="info-title">Nationwide Delivery</p>
+    <p class="info-sub">🚚 2 – 4 Working Days</p>
+
+    <div class="info-badges">
+      <span class="badge delivery">📦 VIP Station</span>
+      <span class="badge payment">💳 Paystack</span>
+    </div>
+    </div>
+  </div>
+
+      </div>
+
+      <!---delivery=-fee-->
+        <div class="delivery-fee-card">
+          <h4>Estimate Delivery Fee</h4>
+
+          <select id="deliveryLocation">
+            <option value="">Select your location</option>
+            <option value="accra">Accra</option>
+            <option value="kumasi">Kumasi</option>
+            <option value="tamale">Tamale</option>
+            <option value="takoradi">Takoradi</option>
+            <option value="other">Other Regions</option>
+          </select>
+
+          <p class="fee-result">
+            Delivery Fee: <span id="deliveryFee"></span>
+          </p>
+        </div>
+
+        <!---Action-buttons--->
+        <div class="action-buttons">
+          <button class="btn primary">Buy Now</button>
+          <button class="btn outline">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+
+        <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2026 GMOS – Ghana Muslim Online Store</p>
+      <p>Built with trust & integrity</p>
+    </div>
+  </footer>
+
+
+
+    <script src="./js/product-detail.js"></script>
+</body>
+</html>
