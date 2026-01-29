@@ -366,7 +366,7 @@ seller info
   border-radius: 12px;
   background: #f9fafb;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   justify-self: center;
   padding-left: 1rem;
   text-align: center;
@@ -462,6 +462,99 @@ DELIVERY FEE
   border-radius: 12px;
   background: #ffffff;
 }
+
+
+.delivery-fee-card .deliveryLoc {
+  width: 100%;
+  height: max-content;
+  padding-left: .5rem;
+  position: relative;
+}
+
+/***
+feeButton
+**/
+.deliveryLoc .feeButton{
+  width: 100%;
+  height: 2.4rem;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  padding-right: .5rem;
+}
+
+.feeButton .feeBtn{
+  width: 100%;
+  height: 2rem;
+  border: 1px solid rgb(211, 203, 203);
+  border-radius: .4rem;
+  align-items: center;
+  text-align: start;
+  justify-content: space-between;
+  display: flex;
+  padding-right: .5rem;
+  padding-left: 1rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(41, 41, 41, 0.1);
+}
+
+.feeButton img{
+  width: .7rem;
+  height: .8rem;
+  align-self: end;
+  justify-self: end;
+}
+
+
+.deliveryLoc .feesOption{
+  width: 96%;
+  height: 10rem;
+  padding: .5rem;
+  flex-direction: column;
+  display: flex;
+  background: rgb(255, 255, 255);
+  z-index: 999;
+  justify-self: center;
+  border-radius: .3rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  gap: .3rem;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-width: none;
+  border: 2px solid rgba(28, 153, 111, 0.623);
+  border-top: .6rem solid  rgba(28, 153, 111, 0.623);
+}
+
+
+
+
+
+.feesOption .div{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(243, 238, 238);
+  max-height: 5rem;
+  margin-top: .3rem;
+  transition: .1s ease;
+  padding-left: .5rem;
+  cursor: pointer;
+}
+
+.div:hover{
+  background: rgba(28, 153, 111, 0.623);
+  color: rgb(241, 237, 237);
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
 
 .delivery-fee-card h4 {
   font-size: 0.85rem;

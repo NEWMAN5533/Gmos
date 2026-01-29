@@ -84,7 +84,7 @@
     </div>
     <div class="shadow-card">
     <p class="info-title">Nationwide Delivery</p>
-    <p class="info-sub">🚚 2 – 4 Working Days</p>
+    <p class="info-sub">🚚 2 – 3 Working Days</p>
 
     <div class="info-badges">
       <span class="badge delivery">📦 VIP Station</span>
@@ -99,14 +99,26 @@
         <div class="delivery-fee-card">
           <h4>Estimate Delivery Fee</h4>
 
-          <select id="deliveryLocation">
-            <option value="">Select your location</option>
-            <option value="accra">Accra</option>
-            <option value="kumasi">Kumasi</option>
-            <option value="tamale">Tamale</option>
-            <option value="takoradi">Takoradi</option>
-            <option value="other">Other Regions</option>
-          </select>
+          <div class="deliveryLoc" id="deliveryLocation">
+            <div class="feeButton">
+                <button class="feeBtn" value="">Select your location 
+                <div class="dropIcon">
+                  <img src="./css/icons/more.png.png" alt="" loading="lazy">
+                </div>
+                </button>
+            </div>
+            <!---option-div-->
+            <div class="feesOption" style="display: flex;">
+              <div class="div"  value="accra">Accra</div>
+                <div class="div"  value="takoradi">Takoradi</div>
+              <div class="div"  value="kumasi">Kumasi</div>
+              <div class="div"  value="sunyani">Sunyani</div>
+              <div class="div"  value="techiman">Techiman</div>
+              <div class="div"  value="brekum">Brekum</div>
+              <div class="div"  value="tamale">Tamale</div>
+              <div class="div" value="other">Other Regions</div>
+              </div>
+            </div>
 
           <p class="fee-result">
             Delivery Fee: <span id="deliveryFee"></span>
