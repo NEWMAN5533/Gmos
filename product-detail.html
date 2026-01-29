@@ -99,16 +99,16 @@
         <div class="delivery-fee-card">
           <h4>Estimate Delivery Fee</h4>
 
-          <div class="deliveryLoc" id="deliveryLocation">
+          <div class="deliveryLoc">
             <div class="feeButton">
-                <button class="feeBtn" value="">Select your location 
+                <button class="feeBtn" value="delivery fees" id="feeSelectorBtn">Select your location 
                 <div class="dropIcon">
                   <img src="./css/icons/more.png.png" alt="" loading="lazy">
                 </div>
                 </button>
             </div>
             <!---option-div-->
-            <div class="feesOption" style="display: flex;">
+            <div class="feesOption" id="deliveryLocation" style="display: none;">
               <div class="div"  value="accra">Accra</div>
                 <div class="div"  value="takoradi">Takoradi</div>
               <div class="div"  value="kumasi">Kumasi</div>
@@ -118,7 +118,7 @@
               <div class="div"  value="tamale">Tamale</div>
               <div class="div" value="other">Other Regions</div>
               </div>
-            </div>
+          </div>
 
           <p class="fee-result">
             Delivery Fee: <span id="deliveryFee"></span>
