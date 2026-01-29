@@ -510,7 +510,7 @@ feeButton
 
 .deliveryLoc .feesOption{
   width: 96%;
-  height: 10rem;
+  height: 15rem;
   padding: .5rem;
   flex-direction: column;
   display: flex;
