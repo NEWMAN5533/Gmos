@@ -423,6 +423,11 @@ seller info
   color: #9a3412;
 }
 
+.badge.badge.payment img{
+  width: .8rem;
+  height: .8rem;
+}
+
 
 /***
 DELIVERY FEE
