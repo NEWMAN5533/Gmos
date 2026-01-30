@@ -537,6 +537,8 @@ product card
   height: 22rem;
   border: 1px solid var(--products-card-borer);
   border-radius: .8rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.13);
+  background: rgb(250, 249, 249);
 }
 
 .featured-card .featured-card-top{
