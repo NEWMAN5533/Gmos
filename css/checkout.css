@@ -294,12 +294,10 @@ MAIN SHOP CONTAINER
   display: flex;
   width: 100%;
   height: 5rem;
-  display: flex;
   align-items: center;
   justify-content: center;
   background: #faf9f9;
-  color: #352e2e;
-  box-shadow:0 2px 6px  rgba(78, 76, 76, 0.1);
+  color: #929496;
   text-align: center;
   padding: 12px 0;
 }

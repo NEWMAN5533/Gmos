@@ -195,7 +195,7 @@ MAIN DETAIL PAGE
   position: relative;
   justify-self: center;
   padding: .4rem;
-  margin-bottom: 9rem;
+  margin-bottom: 4rem;
 }
 
 .main-shop-container .product-detail{
@@ -206,6 +206,7 @@ MAIN DETAIL PAGE
   flex-direction: column;
   position: relative;
   padding: .2rem;
+  margin-bottom: 6rem;
 }
 
 .product-detail .product-img-container {
@@ -592,15 +593,17 @@ ACTION BUTTONS
 .footer {
   display: flex;
   width: 100%;
-  height: 5rem;
+  height: 3rem;
+  position: relative;
+  bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #faf9f9;
-  color: #352e2e;
-  box-shadow: 0 2px 6px rgba(78, 76, 76, 0.1);
+  color: #929496;
   text-align: center;
-  padding: 12px 0;
+  padding: 1px 0;
+  z-index: 999;
 }
 
 .footer-content{
@@ -611,8 +614,6 @@ ACTION BUTTONS
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-top: 2rem;
   line-height: 1.2;
   border-top: 1px solid rgb(243, 237, 237);
 }
-/****----------------footer-----ends------****/
