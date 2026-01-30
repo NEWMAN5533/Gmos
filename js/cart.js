@@ -5,8 +5,10 @@ const totalEl = document.getElementById("totalAmount");
 const emptyCart = document.getElementById("emptyCart");
 const cartSummary = document.querySelector(".cart-summary");
 
+const cartItemContainer = document.querySelector(".cart-items");
+
 /* TEMP delivery fee (will come from selector later) */
-let deliveryFee = 25; // GHS – change dynamically later
+let deliveryFee = 30; // GHS – change dynamically later
 
 deliveryEl.textContent = `GHS ${deliveryFee}`;
 
@@ -27,9 +29,11 @@ function updateTotals() {
   if (items.length === 0) {
     emptyCart.style.display = "block";
     cartSummary.style.display = "none";
+    cartItemContainer.style.display = "none";
   } else {
-    emptyCart.style.display = "block";
+    emptyCart.style.display = "none";
     cartSummary.style.display = "block";
+    cartItemContainer.style.display = "block"
   }
 }
 
