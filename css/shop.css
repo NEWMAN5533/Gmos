@@ -396,7 +396,8 @@ SHOT H2 TITLE
   align-items: center;
   justify-content: center;
   position: relative;;
-  margin-top: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
   text-align: center;
 }
 
@@ -439,7 +440,7 @@ SHOT H2 TITLE
 }
 
 .shop-page-title strong {
-  color: rgb(158, 158, 158);
+  color: rgb(104, 97, 97);
 }
 
 
