@@ -79,7 +79,7 @@ NAVBAR
 .navbar{
   width: 100%;
   max-width: 480px;
-  height: 3rem;
+  height: 3.5rem;
   display: flex;
   position: fixed;
   background: var(--background-cl);
@@ -112,8 +112,8 @@ margin-right: .5rem;
 }
 
 .navbar-left img{
-  width: 2.2rem;
-  height: 2.2rem;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -149,7 +149,7 @@ margin-right: .5rem;
 
 .nav-right #searchInput{
   border: 1px solid rgb(212, 205, 205);
-  height: 1.7rem;
+  height: 2rem;
   padding: .2rem 1.4rem;
   border-radius: 1rem;
   background: var(--background-cl);
@@ -168,8 +168,8 @@ margin-right: .5rem;
 }
 
 .nav-right img{
-  width: 1.4rem;
-  height: 1.2rem;
+  width: 1.7rem;
+  height: 1.5rem;
   cursor: pointer;
 }
 
@@ -188,8 +188,8 @@ margin-right: .5rem;
 
 
 .nav-right a img{
-  width: 1.1rem;
-  height: 1.1rem;
+  width: 1.3rem;
+  height: 1.3rem;
   margin-right: .8rem;
   margin-bottom: .4rem;
 }
@@ -238,8 +238,8 @@ MAIN SHOP CONTAINER
 .main-shop-container .filter-navbar {
  width: 100%;
  max-width: 480px;
- height: 3.3rem;
- top: 3rem;
+ height: 3.8rem;
+ top: 3.5rem;
  left: 0;
  right: 0;
  margin:  0;
@@ -841,7 +841,7 @@ bottom left div
   justify-content: center;
   background: #faf9f9;
   color: #352e2e;
-  box-shadow: 2px 6px 0 rgba(78, 76, 76, 0.4);
+  box-shadow:0 2px 6px  rgba(78, 76, 76, 0.1);
   text-align: center;
   padding: 12px 0;
 }

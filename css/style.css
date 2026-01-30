@@ -795,11 +795,14 @@ SECTION BORDER
   max-width: 100%;
   height: max-content;
   display: flex;
-  background: rgba(217, 221, 221, 0.521);
+  background: rgba(241, 243, 243, 0.521);
   align-content: center;
   justify-content: center;
   align-items: center;
-  margin-top: 1rem;
+  margin-top: 2rem;
+  margin-bottom: .4rem;
+  border-radius: .2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
 }
 
 
@@ -813,7 +816,8 @@ DELIVERY INFORMATION
   padding: .3rem  .6rem;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 2rem;
+  margin-bottom: .4rem;
+  margin-top: .4rem;
 }
 
 .informations .infor-cards{
@@ -955,34 +959,35 @@ DELIVERY INFORMATION
   height: .85rem;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* FOOTER */
 .footer {
   display: flex;
   width: 100%;
-  height: 5rem;
-  padding: 0;
+  height: 4rem;
   background: #faf9f9;
   margin-top: .5rem;
+  margin-bottom: 1rem;
   border-top: 0.1px solid rgb(236, 233, 233);
   color: #352e2e;
-  box-shadow: 2px 6px 0 rgba(78, 76, 76, 0.4);
+  box-shadow: 0 2px 6px rgba(78, 76, 76, 0.1);
   text-align: center;
-  padding: 20px 0;
-}
-
-
-/**** SHOP.HTML ********/
-.products-container{
-width: 100%;
-  height: max-content;
-  display: flex;
-  align-items: center;
-  gap: .5rem;
-  justify-content: center;
-  justify-self: center;
-  background: var(--background-cl);
-  position: relative;
-  flex-direction: column;
-  padding: .5rem 0;
-  margin-top: .2rem;
+  padding: 10px 0;
 }
