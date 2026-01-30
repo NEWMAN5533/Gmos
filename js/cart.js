@@ -1,55 +1,60 @@
-// cart js
-const cartItem = document.querySelectorAll(".cart-item");
 const subtotalEl = document.querySelector(".summary-row span:last-child");
+const deliveryEl = document.getElementById("deliveryAmount");
+const totalEl = document.getElementById("totalAmount");
 
-const totalEl = document.querySelector(".summary-row.total span:last-child");
+const emptyCart = document.getElementById("emptyCart");
+const cartSummary = document.querySelector(".cart-summary");
+
+/* TEMP delivery fee (will come from selector later) */
+let deliveryFee = 25; // GHS – change dynamically later
+
+deliveryEl.textContent = `GHS ${deliveryFee}`;
 
 function updateTotals() {
   let subtotal = 0;
+  const items = document.querySelectorAll(".cart-item");
 
-  document.querySelectorAll(".cart-item").forEach(item => {
-    const price = 
-    parseFloat(item.item.dataset.price);
-    const qty = 
-    parseInt(item.querySelector(".qty").textContent);
-
+  items.forEach(item => {
+    const price = parseFloat(item.dataset.price);
+    const qty = parseInt(item.querySelector(".qty").textContent);
     subtotal += price * qty;
   });
 
   subtotalEl.textContent = `GHS ${subtotal}`;
-  totalEl.textContent = `GHS ${subtotal}`; // delivery will later
+  totalEl.textContent = `GHS ${subtotal + deliveryFee}`;
+
+  // Empty cart check
+  if (items.length === 0) {
+    emptyCart.style.display = "block";
+    cartSummary.style.display = "none";
+  } else {
+    emptyCart.style.display = "block";
+    cartSummary.style.display = "block";
+  }
 }
 
-// quantity controller
+/* Quantity control */
 document.querySelectorAll(".qty-btn").forEach(btn => {
   btn.addEventListener("click", () => {
     const item = btn.closest(".cart-item");
     const qtyEl = item.querySelector(".qty");
     let qty = parseInt(qtyEl.textContent);
 
-    if (btn.classList.contains("plus")) {
-      qty++;
-    }
+    if (btn.classList.contains("plus")) qty++;
+    if (btn.classList.contains("minus") && qty > 1) qty--;
 
-    if (btn.classList.contains("minus") && qty > 1) {
-      qty--;
-    }
-
-    qtyEl.textContent =qty;
+    qtyEl.textContent = qty;
     updateTotals();
   });
 });
 
-// remove item
+/* Remove item */
 document.querySelectorAll(".remove-btn").forEach(btn => {
-btn.addEventListener("click", () => {
-  btn.closest(".cart-item").remove();
-  updateTotals();
-});
+  btn.addEventListener("click", () => {
+    btn.closest(".cart-item").remove();
+    updateTotals();
+  });
 });
 
-// Init 
+/* Init */
 updateTotals();
-
-
-
