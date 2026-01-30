@@ -396,11 +396,13 @@ EMPTY CART STATE
 .empty-cart {
   text-align: center;
   padding: 2rem 1rem;
-  display: flex;
+  display: none;
+  position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
+  margin-bottom: 4rem;
 }
 
 .empty-cart img{
