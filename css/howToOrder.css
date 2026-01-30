@@ -224,7 +224,7 @@ MAIN SHOP CONTAINER
   max-width: 480px;
   display: flex;
   flex-direction: column;
-  height: 20rem;
+  height: max-content;
   border: 1px solid rgb(228, 222, 222);
   left: 0;
   right: 0;
@@ -233,4 +233,108 @@ MAIN SHOP CONTAINER
   justify-self: center;
   padding: .4rem;
   margin-bottom: 2rem;
+}
+
+
+.how-container {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.how-hero {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.how-hero h1 {
+  color: #0b5f2a;
+  margin-bottom: 8px;
+}
+
+.steps {
+  display: grid;
+  gap: 16px;
+}
+
+.step-card {
+  background: #fff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  position: relative;
+}
+
+.step-num {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background: #0b5f2a;
+  color: #fff;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.step-card h3 {
+  margin: 0 0 6px;
+}
+
+.how-cta {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.shop-btn {
+  background: #0b5f2a;
+  color: #fff;
+  padding: 12px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+.footer {
+  display: flex;
+  width: 100%;
+  height: 3rem;
+  position: relative;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #faf9f9;
+  color: #929496;
+  text-align: center;
+  padding: 1px 0;
+}
+
+.footer-content{
+  display: flex;
+  flex-direction: column;
+  height: 3rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.2;
+  border-top: 1px solid rgb(243, 237, 237);
 }
