@@ -793,7 +793,7 @@ SECTION BORDER
 *****/
 .border-div{
   width: 100%;
-  max-width: 100%;
+  max-width: 480px;
   height: max-content;
   display: flex;
   flex-direction: column;
