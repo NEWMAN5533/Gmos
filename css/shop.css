@@ -217,6 +217,10 @@ color: rgb(163, 107, 107);
 }
 
 
+/***
+FEATURED PRODUCTS SLIDER SECTION
+****/
+
 .products-slider {
   margin: 25px 0;
 }
@@ -236,13 +240,19 @@ color: rgb(163, 107, 107);
 .view-all {
   font-size: 14px;
   text-decoration: none;
-  color: #0a7cff;
+  padding-bottom: 8px;
+  color: #62a1e9;
+  transition: .2s ease;
+}
+
+.view-all:hover{
+  text-decoration: underline;
 }
 
 .products-row {
   display: flex;
   gap: 15px;
-  padding: 15px;
+  padding: 19px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
@@ -253,12 +263,18 @@ color: rgb(163, 107, 107);
 }
 
 .product-card {
-  min-width: 160px;
-  background: #fff;
+  min-width: 180px;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: rgb(255,249,249);
   border-radius: 12px;
   padding: 10px;
   scroll-snap-align: start;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.16);
+  border: 1px solid rgb(212, 210, 210);
+  cursor: pointer;
 }
 
 .product-card img {
@@ -271,12 +287,14 @@ color: rgb(163, 107, 107);
 .product-card h4 {
   font-size: 14px;
   margin: 8px 0 4px;
+  color: var(--muted-txt)
 }
 
 .price {
   font-weight: 600;
-  color: #0a7cff;
+  color: var(--btn-cl);
   font-size: 14px;
+
 }
 
 /***
