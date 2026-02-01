@@ -10,7 +10,7 @@
 
   <link rel="shortcut icon" type="image/png" href="./css/icons/logo1.jpeg" />
 
-  <link rel="stylesheet" href="css/failed.css" />
+  <link rel="stylesheet" href="css/AwaitingOrder.css" />
 </head>
 <body>
 
@@ -27,28 +27,33 @@
 
 
 
+<!-- PENDING CONTAINER -->
+<main class="status-page pending">
+  <div class="spinner"></div>
 
-<!-- FAILED CONTAINER -->
-<main class="status-page failed">
-  <img src="./css/icons/failed.png" alt="Payment Failed" class="status-icon">
+  <h1>Payment Pending</h1>
 
-  <h1>Payment Failed</h1>
   <p class="message">
-    We couldn’t complete your order.  
-    Don’t worry, no money was deducted.
+    We are waiting for payment confirmation.  
+    Please do not close this page.
   </p>
 
+  <div class="status-note">
+    This may take a few moments depending on your bank or network.
+  </div>
+
   <div class="action-buttons">
-    <a href="checkout.html" class="btn retry">Try Again</a>
     <a href="shop.html" class="btn outline">Continue Shopping</a>
+    <a href="cart.html" class="btn">View Cart</a>
   </div>
 
   <p class="help-text">
-    Need help?  
-    <a href="https://wa.me/233552944424" target="_blank" rel="noopener noreferrer">Contact Support on WhatsApp</a>
+    If this takes too long,  
+    <a href="https://wa.me/233552944424" target="_blank" rel="noopener">
+      contact us on WhatsApp
+    </a>
   </p>
 </main>
-
 
 
 
@@ -69,6 +74,8 @@
 
 
 
-    <script src="js/failed.js"></script>
+
+
+<script src="js/orderAwaiting.js"></script>
 </body>
 </html>

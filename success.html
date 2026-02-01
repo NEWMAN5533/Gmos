@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GMOS – Ghana Muslim Online Store</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/success.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+      <div class="navbar-left"><a href="index.html"><img src="./css/icons/logo1.jpeg" alt="logo"></a><p>GMOS</p></div>
+
+      <div class="nav-right">
+
+         <!----menu-icon-->
+        <img src="./css/icons/menu-icon.png" alt="" loading="lazy">
+      </div>
+    </header>
+
+<!---MAIN-CONTAINER-->
+
+
+<main class="success-container">
+
+  <!-- SUCCESS MESSAGE -->
+  <section class="success-hero">
+    <div class="check-icon">✔</div>
+    <h1>Payment Successful</h1>
+    <p>Your order has been received successfully</p>
+  </section>
+
+  <!-- ORDER DETAILS -->
+  <section class="order-details">
+    <h2>Order Summary</h2>
+
+    <div class="order-row">
+      <span>Order Reference</span>
+      <span id="orderRef">---</span>
+    </div>
+
+    <div class="order-row">
+      <span>Customer</span>
+      <span id="orderCustomer">---</span>
+    </div>
+
+    <div class="order-row">
+      <span>Phone</span>
+      <span id="orderPhone">---</span>
+    </div>
+
+    <div class="order-row">
+      <span>Delivery Location</span>
+      <span id="orderLocation">---</span>
+    </div>
+  </section>
+
+  <!-- ITEMS -->
+  <section class="order-items">
+    <h2>Items Ordered</h2>
+
+    <div id="itemsContainer">
+      <!-- items injected here -->
+    </div>
+  </section>
+
+  <!-- TOTAL -->
+  <section class="order-total">
+    <div class="row">
+      <span>Subtotal</span>
+      <span id="subtotal">GHS 0</span>
+    </div>
+
+    <div class="row">
+      <span>Delivery Fee</span>
+      <span id="delivery">GHS 0</span>
+    </div>
+
+    <div class="row total">
+      <span>Total Paid</span>
+      <span id="total">GHS 0</span>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="success-cta">
+    <a href="shop.html" class="shop-btn">Continue Shopping</a>
+  </section>
+
+</main>
+
+
+
+
+
+
+
+    <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2026 GMOS – Ghana Muslim Online Store</p>
+      <p>Built with trust & integrity</p>
+    </div>
+  </footer>
+
+
+
+  <script src="js/order-success.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GMOS – Ghana Muslim Online Store</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/whatsapp-orders.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+      <div class="navbar-left"><a href="index.html"><img src="./css/icons/logo1.jpeg" alt="logo"></a><p>GMOS</p></div>
+
+      <div class="nav-right">
+
+        <!----menu-icon-->
+        <img src="./css/icons/menu-icon.png" alt="" loading="lazy">
+      </div>
+    </header>
+
+<!---MAIN-CONTAINER-->
+
+  <main class="page">
+    <!-- Header -->
+    <header class="page-header">
+      <h1>WhatsApp Order Notifications</h1>
+      <p>Orders will be sent instantly to WhatsApp</p>
+    </header>
+
+    <!-- Enable Notification -->
+    <section class="card">
+      <div class="row space">
+        <h3>Enable WhatsApp Notifications</h3>
+        <label class="switch">
+          <input type="checkbox" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+    </section>
+
+    <!-- WhatsApp Numbers -->
+    <section class="card">
+      <h3>Notification Recipients</h3>
+
+      <div class="input-group">
+        <label>Admin WhatsApp Number</label>
+        <input type="text" placeholder="+233XXXXXXXXX">
+      </div>
+
+      <div class="input-group">
+        <label>Seller WhatsApp Number</label>
+        <input type="text" placeholder="+233XXXXXXXXX">
+      </div>
+
+      <div class="input-group">
+        <label>Customer Confirmation (Optional)</label>
+        <input type="text" placeholder="+233XXXXXXXXX">
+      </div>
+    </section>
+
+    <!-- Message Preview -->
+    <section class="card">
+      <h3>Order Message Preview</h3>
+
+      <div class="preview-box">
+🛒 New Order Received
+
+Product: Example Product
+Quantity: 2
+Price: GHS 200
+
+Delivery Fee: GHS 25
+
+Customer:
+Name: John Doe
+Location: Accra
+
+Total: GHS 425
+      </div>
+    </section>
+
+    <!-- Actions -->
+    <section class="actions">
+      <button class="btn secondary">Send Test to WhatsApp</button>
+      <button class="btn primary">Save Settings</button>
+    </section>
+  </main>
+
+
+
+
+   
+   
+   
+   
+   
+   
+
+
+   <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2026 GMOS – Ghana Muslim Online Store</p>
+      <p>Built with trust & integrity</p>
+    </div>
+  </footer>
+
+
+
+<script src="js/whatsapp-notification.js"></script>
+  </body>
+  </html>
