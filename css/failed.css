@@ -237,145 +237,82 @@ animation: shake 4s infinite;
 }
 
 
-/***
-MAIN SHOP CONTAINER
+/****
+main status page
 ****/
 
-
-
-.checkout-container {
-  max-width: 480px;
-  margin: auto;
-  padding: 20px;
-  margin-top: 3rem;
-}
-
-.checkout-container h1 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: var(--main-txt);
-}
-
-.checkout-grid {
-  display: grid;
-  gap: 20px;
-}
-
-@media (min-width: 768px) {
-  .checkout-grid {
-    grid-template-columns: 1.2fr 1fr;
-  }
-}
-
-.checkout-form,
-.checkout-summary {
-  background: #fff;
-  padding: 18px;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-  border: 1px solid rgb(197, 194, 194);
-}
-
-.checkout-form h2,
-.checkout-summary h2 {
-  margin-top: 0;
-  color: var(--muted-txt);
-}
-
-.checkout-summary span {
-  color: var(--muted-txt);
-}
-
-.checkout-form h2, span {
-color: var(--muted-txt);
-}
-
-
-.checkout-form label {
-  display: block;
-  margin-bottom: 14px;
-  font-size: 14px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: .8rem;
-  font-weight: 600;
-  color: var(--main-txt);
-}
-
-.checkout-form input {
+.status-page {
+  min-height: 80vh;
   width: 100%;
-  padding: 10px;
-  margin-top: 6px;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-  font-size: 14px;
+  max-width: 480px;
+  justify-self: center;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+
 }
 
-.summary-row {
-  display: flex;
-  justify-content: space-between;
+.status-icon {
+  width: 15%;
+  margin-bottom: 20px;
+}
+
+.failed h1 {
+  font-family: "Poppins", sans-serif;
+  color: #c03a2bef;
   margin-bottom: 10px;
 }
 
-.summary-row.total {
-  font-weight: 700;
-  border-top: 1px solid #eee;
-  padding-top: 10px;
+.message {
+  max-width: 420px;
+  font-size: 1rem;
+  color: var(--main-txt);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-bottom: 25px;
 }
 
-.pay-btn {
-  width: 100%;
-  background: var(--btn-cl);
-  color: #fff;
-  border: none;
-  padding: 14px;
-  border-radius: 6px;
-  font-size: 16px;
-  font-weight: 600;
-  margin-top: 16px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-  cursor: pointer;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-
-.secure-note {
-  text-align: center;
-  margin-top: 10px;
-  font-size: .7rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: var(--muted-txt);
-  font-weight: 600;
+.action-buttons {
   display: flex;
-  align-items: center;
-  justify-self: center;
-  gap: .4rem;
+  gap: 12px;
+  margin-bottom: 20px;
 }
 
-.secure-note img{
-  width: 1.4rem;
-  height: 1.4rem;
+.btn {
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
+.btn.retry {
+  background: #c0392b;
+  color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: .8rem;
+}
 
+.btn.outline {
+  border: 1px solid #ccc;
+  color: #333;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: .8rem;
+}
 
+.help-text {
+  font-size: 14px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.help-text a {
+  color: #0a7cff;
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: .8rem;
+}
 
 
 
@@ -390,13 +327,16 @@ color: var(--muted-txt);
 .footer {
   display: flex;
   width: 100%;
-  height: 5rem;
+  height: 3rem;
+  position: fixed;
+  bottom: 0;
+  display: flex;
   align-items: center;
   justify-content: center;
   background: #faf9f9;
   color: #929496;
   text-align: center;
-  padding: 12px 0;
+  padding: 1px 0;
 }
 
 .footer-content{
@@ -407,8 +347,6 @@ color: var(--muted-txt);
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-top: 2rem;
   line-height: 1.2;
   border-top: 1px solid rgb(243, 237, 237);
 }
-
