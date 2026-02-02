@@ -133,9 +133,10 @@ margin-right: .5rem;
 /**---AUTHENTICATION PAGE STYLES---***/
 
 .auth-container {
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
+  overflow-y: auto;
   justify-content: center;
   padding: 20px;
 }
@@ -143,7 +144,7 @@ margin-right: .5rem;
 .auth-card {
   background: #fff;
   width: 100%;
-  top: 4.5rem;
+  margin-top: 1rem;
   max-width: 380px;
   padding: 10px 25px;
   border-radius: 14px;
@@ -151,6 +152,7 @@ margin-right: .5rem;
   text-align: center;
   border-top: 9px solid var(--btn-cl);
   border-bottom: 9px solid var(--btn-cl);
+  margin-bottom: 4rem;
 }
 
 .logo {
