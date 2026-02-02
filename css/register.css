@@ -138,14 +138,14 @@ margin-right: .5rem;
   align-items: center;
   justify-content: center;
   padding: 20px;
-  margin-top: 1rem;
 }
 
 .auth-card {
   background: #fff;
   width: 100%;
+  top: 4.5rem;
   max-width: 380px;
-  padding: 30px 25px;
+  padding: 10px 25px;
   border-radius: 14px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
   text-align: center;
