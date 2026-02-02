@@ -155,6 +155,10 @@ margin-right: .5rem;
   margin-bottom: 3rem;
 }
 
+.auth-container .register {
+  margin-top: 2rem;
+}
+
 .logo {
   width: 70px;
   margin-bottom: 10px;
